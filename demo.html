@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="window">
+
+    </div>
+    <script src="animate.js"></script>
+    <script src="wheel1.2.js"></script>
+    <script>
+        //轮播
+        wheel(".window", {
+            imgs: ["https://img.alicdn.com/tfs/TB1ftPuNLb2gK0jSZK9XXaEgFXa-1130-500.jpg_q100.jpg_.webp", "https://aecpm.alicdn.com/simba/img/TB1W4nPJFXXXXbSXpXXSutbFXXX.jpg", "http://img.alicdn.com/imgextra/i3/183/O1CN0191fvrH1DDr5lNYIIE_!!183-0-luban.jpg_q100.jpg_.webp"],
+            imgColor: ["#f43c17", "#e8e8e8", "#01D896"],
+            links: ["http://baidu.com", "http://baidu.com", "http://baidu.com"],
+            imgSize: [1130, 500],
+            btnColor: "#aaa",
+            btnActive: "#fff",
+            btnPos: ["center", "10"]
+        }, {
+            time: 5,
+            runStyle: "Tween.Linear"
+
+        })
+    </script>
+</body>
+
+</html>
